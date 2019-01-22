@@ -1,2 +1,4 @@
 # Schedule_Management_System
-Good Luck
+
+We are the best group.
+Good Luck.
