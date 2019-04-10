@@ -26,12 +26,19 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        textfinder.cpp
+        textfinder.cpp \
+    preview.cpp \
+    tableview.cpp
 
 HEADERS += \
-        textfinder.h
+        textfinder.h \
+    preview.h \
+    tableview.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    schedules.qrc

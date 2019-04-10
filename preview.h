@@ -1,18 +1,24 @@
 #ifndef PREVIEW_H
 #define PREVIEW_H
 
-#include <QObject>
 #include <QWidget>
 
-class preView : public QWidget
+QT_BEGIN_NAMESPACE
+class QTextEdit;
+QT_END_NAMESPACE
+
+class createPreview : public QWidget
 {
     Q_OBJECT
+
 public:
-    explicit preView(QWidget *parent = nullptr);
+    createPreview(QWidget *parent = 0);
+    void setWindowText(const QString text);
+    void clearText();
 
-signals:
+private:
 
-public slots:
+    QTextEdit *textEdit;
 };
 
 #endif // PREVIEW_H
